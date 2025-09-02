@@ -10,12 +10,11 @@
 <div class="container">
   <header>
     <h1>SparApp <span id="face">😢</span></h1>
-    <p class="subtitle">Plane, wie du in den nächsten Jahren sparen kannst</p>
+    <p class="subtitle">Plane, wie du in den nächsten Jahren 50.000 € sparen kannst</p>
     <button id="toggleTheme">🌙 Dark / Light</button>
   </header>
 
   <main>
-    <!-- Grundwerte -->
     <section class="controls">
       <div class="card input-group">
         <label for="target">Sparziel (€)</label>
@@ -31,8 +30,6 @@
       <div class="card input-group">
         <label for="income">Monatseinkommen (€)</label>
         <input id="income" type="number" value="3000" min="0">
-        <label for="expenses">Monatliche Ausgaben (€)</label>
-        <input id="expenses" type="number" value="2000" min="0">
         <label for="strategy">Sparstrategie</label>
         <select id="strategy">
           <option value="fixed">Fester Betrag / Monat</option>
@@ -56,15 +53,6 @@
       </div>
     </section>
 
-    <!-- Monatlicher Sparplan -->
-    <section class="card">
-      <h3>Monatlicher Sparplan</h3>
-      <label for="monthsCount">Anzahl Monate:</label>
-      <input id="monthsCount" type="number" value="12" min="1" max="120">
-      <div id="monthlyPlanContainer"></div>
-    </section>
-
-    <!-- Zusammenfassung -->
     <section class="summary">
       <div class="card small">
         <div>Monatlicher Beitrag</div>
@@ -80,7 +68,6 @@
       </div>
     </section>
 
-    <!-- Diagramm -->
     <section class="chart-card card">
       <h3>Prognose</h3>
       <canvas id="chart" height="300"></canvas>
@@ -93,6 +80,20 @@
         <button id="downloadCSV">CSV Export</button>
         <button id="saveLocal">Einstellungen speichern</button>
       </div>
+    </section>
+
+    <section class="card">
+      <h3>Monatlicher Sparplan</h3>
+      <table id="monthlyPlan" border="1" cellpadding="6" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Monat</th>
+            <th>Geplant (€)</th>
+            <th>Tatsächlich gespart (€)</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
     </section>
 
     <section class="advice card">
