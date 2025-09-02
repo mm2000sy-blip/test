@@ -43,13 +43,8 @@ button{cursor:pointer;}
 .actions{margin-top:12px;display:flex;gap:8px;}
 button{background:var(--accent);color:white;padding:8px 14px;border-radius:8px;border:0;font-size:14px;transition:background 0.2s ease;}
 button:hover{background:#1e40af;}
-button.secondary{background:#fff;color:var(--accent);border:1px solid #e6edf3;}
 .advice{margin-top:20px;}
 .advice *{color:inherit;}
 footer{margin-top:24px;text-align:center;color:var(--muted);font-size:13px;}
 .strategy-field p{font-size:14px;color:var(--muted);margin-top:10px;padding:10px;background:#f1f5f9;border-radius:8px;}
-#monthlyPlanContainer{margin-top:12px;overflow-x:auto;}
-#monthlyPlanContainer table{width:100%;border-collapse:collapse;}
-#monthlyPlanContainer th, #monthlyPlanContainer td{border:1px solid #e6edf3;padding:6px;text-align:center;}
-#monthlyPlanContainer th{background:var(--accent);color:#fff;}
 @media(max-width:800px){.controls{grid-template-columns:1fr;}.summary{flex-direction:column;}.chart-legend{flex-direction:column;gap:6px;}}
